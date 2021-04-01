@@ -26,8 +26,15 @@ tableData.forEach(function(ufoReport) {
 
 ///////////////////////////////////////////////////////////////////////////////////////////  
 //PART 2 - DATA SEARCH
+
+// Assign the data from `data.js` to a descriptive variable
+var ufo = data;
+
+// Select the button
+var button = d3.select("#button");
+
 // // Select the form
-// var form = d3.select("#form");
+var form = d3.select("#form");
 
 // // Create event handlers for pressing the enter key
 // form.on("submit",runEnter);
