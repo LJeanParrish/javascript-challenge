@@ -26,15 +26,8 @@ tableData.forEach(function (ufoReport) {
 
 // // ///////////////////////////////////////////////////////////////////////////////////////////  
 //PART 2 - DATA SEARCH
-
-// Assign the data from `data.js` to a descriptive variable
-// var ufos = data;
-
 // Select the button
-// var button = d3.select("#button");
-
 var button = d3.select("#filter-btn");
-
 
 // Select the form
 var form = d3.select("#form");
@@ -57,7 +50,6 @@ function runEnter() {
 
   // Print the value to the console
   console.log(inputValue);
-  console.log(ufos);
 
   var filteredData = tableData.filter(ufo => ufo.datetime === inputValue);
 
