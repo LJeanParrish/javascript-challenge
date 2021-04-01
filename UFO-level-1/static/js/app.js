@@ -24,7 +24,7 @@ tableData.forEach(function (ufoReport) {
   });
 });
 
-///////////////////////////////////////////////////////////////////////////////////////////  
+// // ///////////////////////////////////////////////////////////////////////////////////////////  
 //PART 2 - DATA SEARCH
 
 // Assign the data from `data.js` to a descriptive variable
@@ -36,9 +36,9 @@ var button = d3.select("#button");
 // Select the form
 var form = d3.select("#form");
 
-// Create event handlers for pressing the enter key
-button.on("click", runEnter);
-form.on("submit", runEnter);
+// Create event handlers 
+button.on("click",runEnter);
+form.on("submit",runEnter);
 
 // Create the function to run the event
 function runEnter() {
@@ -60,6 +60,4 @@ function runEnter() {
 
   console.log(filteredData);
 
-// // Set the span tag in the h1 element to the text that was entered in the form
-//   d3.select("h1>span").text(inputValue);
-// }
+}
