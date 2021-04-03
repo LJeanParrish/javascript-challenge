@@ -55,4 +55,22 @@ function runEnter() {
 
   console.log(filteredData);
 
+  //Clear table to accomodate filtering
+  tbody.html("")
+
+  filteredData.forEach(function (ufoReport) {
+    console.log(ufoReport);
+  
+    // Append one table row `tr` for each filtered value
+    var row = tbody.append("tr");
+  
+    // Use `Object.entries` to console.log each filtered value
+    Object.entries(ufoReport).forEach(function ([key, value]) {
+      console.log(key, value);
+  
+      // Append a cell to the row for each filtered value
+      var cell = row.append("td");
+      cell.text(value);
+    });
+  });
 }
