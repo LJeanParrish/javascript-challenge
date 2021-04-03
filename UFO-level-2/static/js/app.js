@@ -76,4 +76,4 @@ function runEnter() {
 }
 
 ///////////////////////////////////////////////////////////////////////////////
-//PART III - NOT REQUIRED FOR ASSIGNMENT
+//PART III - MULTIPLE SEARCHES - NOT REQUIRED FOR ASSIGNMENT
