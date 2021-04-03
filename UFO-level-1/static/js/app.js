@@ -55,4 +55,25 @@ function runEnter() {
 
   console.log(filteredData);
 
+  //Clear table
+  tbody.html("")
+
+  filteredData.forEach(function (ufoReport) {
+    console.log(ufoReport);
+  
+    // Step 2:  Use d3 to append one table row `tr` for each ufo report object
+    var row = tbody.append("tr");
+  
+    // Step 3:  Use `Object.entries` to console.log each ufo report value
+    Object.entries(ufoReport).forEach(function ([key, value]) {
+      console.log(key, value);
+  
+      // Append a cell to the row for each value in the ufo report object
+      var cell = row.append("td");
+      cell.text(value);
+    });
+  });
+
+
 }
+
